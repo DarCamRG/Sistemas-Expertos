@@ -5,7 +5,8 @@
 #Experiencia de Conductores
 
 def membresia_triangular (x, a, b, c):
-    if x <= a or x >= C:
+
+    if x <= a or x >= c:
         return 0.0
     elif a < x <= b:
         return (x - a) / (b -a)
