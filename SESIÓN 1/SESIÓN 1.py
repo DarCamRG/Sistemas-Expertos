@@ -56,6 +56,14 @@ def diagnosticar_servidor(Funcionamiento):
     #Caso Normal
     else:
         return "El servidor está funcionando dentro de los parámetros normales."    
+
+    print("Caso Normal")
+    print("Diagnostico: El servidor está funcionando dentro de los parámetros normales. No se requiere acción adicional.")
+
+
+
+
+
  
 
 
