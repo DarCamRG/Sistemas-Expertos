@@ -23,15 +23,26 @@ def diagnosticar_servidor(Funcionamiento):
     if Funcionamiento ["temperatura"] > 80 and Funcionamiento ["ventilador_apagado "] == False:
         return "El servidor está en riesgo de sobrecalentamiento. Activar ventilador."
 
+
     # Caso Ping Alto Problemas de Red
     # ping_respuesta
     elif Funcionamiento["ping_respuesta"] > 1000:
         return "El servidor está experimentando problemas de red. Verificar la conexión."
+
+
     #Caso CPU Alto
     # cpu_uso
-    elif Funcionamiento["cpu_uso"] > 90 and Funcionamiento["memoria_libre"] < 20:
-        return "El servidor está experimentando alta carga de CPU y poca memoria libre. Considerar optimizar procesos o aumentar recursos."
+    elif Funcionamiento["cpu_uso"] > 90 and Funcionamiento["memoria_libre"] < 10:
+        return "El servidor está experimentando alta carga de CPU y poca memoria libre. Considerar optimizar procesos."
+
+
+    #Caso Memoria Baja 
+    #memoria_libre
+    elif Funcionamiento["memoria_libre"] < 10:
+        return "El servidor tiene poca memoria libre. Considerar liberar espacio."
  
+
+
 
 
 
