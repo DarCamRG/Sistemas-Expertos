@@ -40,6 +40,22 @@ def diagnosticar_servidor(Funcionamiento):
     #memoria_libre
     elif Funcionamiento["memoria_libre"] < 10:
         return "El servidor tiene poca memoria libre. Considerar liberar espacio."
+
+    #Caso Ventilador Apagado
+    #ventilador_apagado
+    elif Funcionamiento["ventilador_apagado"] == True:
+        return "El ventilador del servidor está apagado. Activar ventilador para evitar sobrecalentamiento."    
+
+    #Caso Ventilador Encendido
+    #ventilador_encendido
+    elif Funcionamiento["ventilador_encendido"] == True:    
+        return "El ventilador del servidor está encendido y funcionando correctamente."
+
+    
+
+    #Caso Normal
+    else:
+        return "El servidor está funcionando dentro de los parámetros normales."    
  
 
 
