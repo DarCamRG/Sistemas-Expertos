@@ -36,13 +36,13 @@ while nuevos_hechos:
         condiciones_cumplidas = all(Hechos.get(condicion, False) == valor for condicion, valor in regla["condiciones"].items())
 
         if condiciones_cumplidas:
-            for conclusion, valor in regla["conclusion"].items():
+            for clave, valor in regla["conclusion"].items():
                 if clave not in Hechos:
-                    Hechos[conclusion] = valor
+                    Hechos[clave] = valor
                     nuevos_hechos = True
                     print(f"Disparando {regla['id']} -> Nuevo hecho: {clave}={valor}")
 
-print("\nHechos final:", hechos)
+print("\nHechos final:", Hechos)
 
 
 
