@@ -12,4 +12,11 @@ servidor_estado = {
 "temperatura": 85 #C°
 "ventilador_apagado": False
 }
+#Supuesto Motor de Inferencia
 
+#Caso Temperatura Alta
+#Temperatura
+
+def diagnosticar_servidor(Funcionamiento):
+    if Funcionamiento ["temperatura"] > 80 and Funcionamiento ["ventilador_apagado "] == False:
+        return "El servidor está en riesgo de sobrecalentamiento. Activar ventilador."
