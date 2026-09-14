@@ -30,3 +30,7 @@ for anios in conductores:
         grados[categoria] = grado
         print ("- {categoria}: {grado:.3f}")
 
+#Determinacion algoritmica de mayor grado
+
+categoria_ganadora = max(grados, key=grados.get)
+print("Categoria Dominante: {categoria_ganadora} (grado {grados[categoria_ganadora]})")
