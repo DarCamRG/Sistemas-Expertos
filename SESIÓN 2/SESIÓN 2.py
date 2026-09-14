@@ -18,10 +18,15 @@ reglas = [
     {"id": "R2", "condiciones": {"transaccion_inusual": True, "pais extranjero": True}, "conclusion": {"bloquear_tarjeta": True}},
     {"id": "R3", "condiciones": {"compra_nocturna": True, "monto_alto": True}, "conclusion": {"alerta_seguridad": True}},
     {"id": "R4", "condiciones": {"bloquear_tarjeta": True, "alerta_seguridad": True}, "conclusion": {"notificar_cliente": True}},
-
 ]
 
+#Regla del Monto Basicamente Si el Monto es Mayor a 5000 entonces es un Monto Alto
+if Hechos["monto"] > 5000:
+    Hechos["monto_alto"] = True
+else:
+    Hechos["monto_alto"] = False
 
+    
 
 
     
