@@ -26,7 +26,28 @@ if Hechos["monto"] > 5000:
 else:
     Hechos["monto_alto"] = False
 
-    
+#Motor de Inferencia
+nuevos_hechos = True
+while nuevos_hechos:
+    nuevos_hechos = False
+    for regla in reglas:
+        #El operador all() es el que toma la el papel de Puerta Logica AND
+        #Todas las Normas (Norman Onsborn) tengo sueño deben cumplirse simultaneamente
+        condiciones_cumplidas = all(Hechos.get(condicion, False) == valor for condicion, valor in regla["condiciones"].items())
+
+        if condiciones_cumplidas:
+            for conclusion, valor in regla["conclusion"].items():
+                if clave not in Hechos:
+                    Hechos[conclusion] = valor
+                    nuevos_hechos = True
+                    print(f"Disparando {regla['id']} -> Nuevo hecho: {clave}={valor}")
+
+print("\nHechos final:", hechos)
+
+
+
+
+
 
 
     
