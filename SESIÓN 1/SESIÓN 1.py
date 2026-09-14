@@ -1,0 +1,2 @@
+#SESIÓN 1 — INTRODUCCIÓN A SISTEMAS EXPERTOS Y REPASO PYTHON 
+#Taller 1 Logica Proposicional
