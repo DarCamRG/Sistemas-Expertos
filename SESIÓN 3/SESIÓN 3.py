@@ -12,5 +12,15 @@ def membresia_triangular (x, a, b, c):
     elif b < x < c:
         return (c - x) / (c - b)
 
-    
-    
+#Def. 3 Conjuntos difusos
+
+conjuntos = {
+    "Novato":       (0, 0, 5),
+    "Intermedio":   (2, 5, 8),
+    "Experto":      (5, 10, 20)
+}
+
+conductores = [3, 6, 12]
+
+for anios in conductores:
+    print
