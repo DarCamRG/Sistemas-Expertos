@@ -61,26 +61,32 @@ def diagnosticar_servidor(Funcionamiento):
     print("Diagnostico: El servidor está funcionando dentro de los parámetros normales. No se requiere acción adicional.")
 
     #Caso ping_respuesta
+    print("Caso Todo en orden")
     caso1 = {"ping_respuesta": 1200}
     print(diagnosticar_servidor(caso1)) 
 
     #Caso cpu_uso y memoria_libre
+    print("Caso CPU y Memoria")
     caso2 = {"cpu_uso": 95, "memoria_libre": 5}
     print(diagnosticar_servidor(caso2)) 
 
     #Caso memoria_libre
+    print("Caso Memoria Baja")
     caso3 = {"memoria_libre": 8}
     print(diagnosticar_servidor(caso3)) 
 
     #Caso ventilador_apagado
+    print("Caso Ventilador Apagado")
     caso4 = {"ventilador_apagado": True}
     print(diagnosticar_servidor(caso4)) 
 
     #Caso ventilador_encendido
+    print("Caso Ventilador Encendido")
     caso5 = {"ventilador_encendido": True}
     print(diagnosticar_servidor(caso5))
 
     #Caso Sobrecarga
+    print("Caso Sobrecarga")
     Caso6 = {"cpu_uso":100, "memoria_libre": 5, "ping_respuesta":1000, "temperatura":100, "ventilador_apagado": True}
     print(diagnosticar_servidor(Caso6))
 
