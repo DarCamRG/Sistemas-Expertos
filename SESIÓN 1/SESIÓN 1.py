@@ -20,7 +20,7 @@ servidor_estado = {
 #temperatura
 
 def diagnosticar_servidor(Funcionamiento):
-    if Funcionamiento ["temperatura"] > 80 and Funcionamiento ["ventilador_apagado "] == False:
+    if Funcionamiento ["temperatura"] > 80 and Funcionamiento ["ventilador_apagado"] == False:
         return "El servidor está en riesgo de sobrecalentamiento. Activar ventilador."
 
 
