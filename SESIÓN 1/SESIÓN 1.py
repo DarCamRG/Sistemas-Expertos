@@ -56,10 +56,10 @@ def diagnosticar_servidor(Funcionamiento):
 
 
        
-
+#Caso Normal
 print("Caso Normal")
-print("Diagnostico: El servidor está funcionando dentro de los parámetros normales. No se requiere acción adicional.")
-print(diagnosticar_servidor(servidor_estado))
+casoNormal = {"temperatura": 40, "ventilador_apagado": False, "ping_respuesta": 50, 
+              "cpu_uso": 50, "memoria_libre": 15, "ventilador_encendido": True}
 
 
 #Caso ping_respuesta
