@@ -23,4 +23,10 @@ conjuntos = {
 conductores = [3, 6, 12]
 
 for anios in conductores:
-    print
+    print ("Conductor con {anios} años de experiencia:")
+    grados = {}
+    for categoria, (a, b, c) in conjuntos.items():
+        grado = membresia_triangular(anios, a, b, c)
+        grados[categoria] = grado
+        print ("- {categoria}: {grado:.3f}")
+
