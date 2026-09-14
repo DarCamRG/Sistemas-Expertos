@@ -11,7 +11,9 @@ servidor_estado = {
 "ping_respuesta": 320 #ms
 "temperatura": 85 #C°
 "ventilador_apagado": False
+"vemtilador_encendido": True
 }
+
 #Supuesto Motor de Inferencia
 
 #Caso Temperatura Alta
@@ -19,4 +21,8 @@ servidor_estado = {
 
 def diagnosticar_servidor(Funcionamiento):
     if Funcionamiento ["temperatura"] > 80 and Funcionamiento ["ventilador_apagado "] == False:
-        return "El servidor está en riesgo de sobrecalentamiento. Activar ventilador."
+        return "El servidor está en riesgo de sobrecalentamiento. Activar ventilador."3
+
+#Caso Ping Alto Problemas de Red
+#
+
