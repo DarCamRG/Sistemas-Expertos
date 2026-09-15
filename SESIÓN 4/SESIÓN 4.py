@@ -30,5 +30,15 @@ def evaluar_reglas_bono():
     }
 
 #EJECUCION
+resultado = evaluar_reglas_bono()
+print ("Niveles de activacion para el bono", resultado)
 
+#Agrecacion OR MAX
+#Reglas distintas concluyen "Bono Alto" 0.4 0.7
+#Agregacion de Mundano (Mamdani) tiene que si o si usar el maximo OR:
+
+fuerza_r_a = 0.4
+fuerza_r_b = 0.7
+fuerza_final_bono_alto = max(fuerza_r_a, fuerza_r_b)
+print("Fuerza Final Agregada Bono Alto: {fuerza_final_bono_alto}")
 
