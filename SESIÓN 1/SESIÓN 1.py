@@ -97,4 +97,4 @@ print(diagnosticar_servidor(Caso6))
 
 #FIN quien diria que dejar todo a ultima hora no es buena idea, pero bueno, al menos lo logre creo.
 
-
+###### prueba
